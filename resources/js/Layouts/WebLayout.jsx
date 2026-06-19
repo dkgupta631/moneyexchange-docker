@@ -64,7 +64,7 @@ export default function WebLayout({ children }) {
             <div className="container-fluid position-relative p-0">
                 <nav className={`navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 ${isActive('home') ? '' : 'bg-primary'}`}>
                     <Link href="/" className="navbar-brand p-0">
-                        <img src={`${appUrl}/website/assets/logo/logo2.png`} style={{ borderRadius: '10px' }} /><span class="text-white fw-bold"> G+ Services</span>
+                        <img src={`${appUrl}/website/assets/logo/logo2.png`} style={{ borderRadius: '10px' }} /><span class="text-white fw-bold"> G+ Services docker</span>
                     </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span className="fa fa-bars"></span>
