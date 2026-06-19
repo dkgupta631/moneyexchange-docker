@@ -1,0 +1,182 @@
+/* // For Exchange Rate board START */
+.board-wrapper{
+    /* min-height:150vh;
+    background:#2b2b2b; */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.exchange-board{
+    width:420px;
+    padding:20px;
+    border-radius:10px;
+    font-family:Arial;
+}
+
+.title{
+    text-align:center;
+    font-size:26px;
+    font-weight:bold;
+}
+
+.city{
+    text-align:center;
+    margin-top:5px;
+    font-size:16px;
+    color: black;
+}
+
+.top-info{
+    display:flex;
+    justify-content:space-between;
+    margin-top:10px;
+    font-size:14px;
+}
+
+/* TWO COLUMN SECTION */
+
+.rate-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    margin-top:15px;
+    /* border-top:1px solid #ccc; */
+}
+
+.left-section{
+    padding-right:10px;
+    /* border-right:2px solid #ccc; */
+}
+
+.right-section{
+    padding-left:10px;
+}
+
+/* rows */
+
+.header-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    text-align:center;
+    /* margin-top:10px; */
+    font-weight:bold;
+}
+
+.rate-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    text-align:center;
+    margin-top:8px;
+}
+
+.rate-row div{
+    font-size:13px;
+}
+
+.rate-row b{
+    display:block;
+    font-size:22px;
+    margin-top:2px;
+    color: black;
+}
+.time-css{
+     font-size:20px;
+     color: black;
+     font-weight: bolder;
+}
+.black-color{
+    color: black;
+}
+
+.right-title{
+    text-align:left;
+    margin-left:25px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.right-note{
+    text-align:center;
+    font-size:12px;
+    margin-top:5px;
+    margin-bottom: 12px;
+}
+
+.bottom-label{
+    text-align:left;
+    margin-left:15px;
+    margin-top:15px;
+    font-size:16px;
+}
+
+.footer{
+    text-align:center;
+    /* margin-top:20px; */
+    font-size:14px;
+}
+
+.tel{
+    color:red;
+    font-weight:bold;
+    font-size: 20px;
+}
+/* IMPORTANT keeps same design on mobile */
+
+@media(max-width:500px){
+
+    .exchange-board{
+        width:100%;
+        border-radius:0;
+    }
+    .time-css{
+        font-size:12px;
+        color: black;
+        font-weight: bolder;
+    }
+    .rate-row div {
+        font-size: 11px;
+    }
+    .right-note
+    {
+        font-size: 11px;
+    }
+    .title
+    {
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+}
+/* // For Exchange Rate board END */
+
+.redborder {
+    border: 1px solid red;
+}
+
+
+.css-13cymwt-control{
+    height: calc(3.5rem + 2px);
+}
+
+.currency-select .react-select__control {
+    border-radius: 10px;
+    min-height: 55px;
+    border: 1px solid #ddd;
+}
+
+.currency-select .react-select__menu {
+    border-radius: 10px;
+}
+
+.currency-select img {
+    border-radius: 2px;
+}
+
+.home-card-img{
+    height: 100px;
+    border-radius: 50px;
+}
+.text-purple{
+    color: #5B2D8E;
+}
