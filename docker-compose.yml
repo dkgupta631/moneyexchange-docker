@@ -5,7 +5,8 @@ services:
       target: app
     container_name: moneyexchange_app
     restart: unless-stopped
-    env_file: .env
+    env_file: 
+      - .env
     volumes:
       - app_storage:/var/www/html/storage
       - public_files:/var/www/html/public
