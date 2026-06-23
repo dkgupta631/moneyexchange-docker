@@ -4,6 +4,9 @@
 # making Laravel serve assets from the Vite dev server.
 services:
   app:
+    env_file:
+      - .env.docker
+      - .env
     volumes:
       - app_storage:/var/www/html/storage
       - ./public:/var/www/html/public
