@@ -1,8 +1,11 @@
 #!/bin/bash
 set -e
 
-# Generate app key if not set
-if [ -z "$APP_KEY" ] || [ "$APP_KEY" = "" ]; then
+# Generate app key if not set.
+# key:generate --force writes to .env, so create it if absent (production
+# passes env vars via Docker env_file with no .env file on disk).
+if [ -z "$APP_KEY" ]; then
+    touch /var/www/html/.env
     php artisan key:generate --force
 fi
 
