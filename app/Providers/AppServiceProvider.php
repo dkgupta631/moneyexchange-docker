@@ -29,7 +29,16 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-
+        if (config('app.env') === 'production') {
+            \URL::forceScheme('https');
+            \Illuminate\Http\Request::setTrustedProxies(
+                ['*'],
+                \Illuminate\Http\Request::HEADER_X_FORWARDED_FOR |
+                \Illuminate\Http\Request::HEADER_X_FORWARDED_HOST |
+                \Illuminate\Http\Request::HEADER_X_FORWARDED_PORT |
+                \Illuminate\Http\Request::HEADER_X_FORWARDED_PROTO
+            );
+        }
          // Share languages globally with all Inertia pages for Website START
         Inertia::share([
             'languages' => function () {
